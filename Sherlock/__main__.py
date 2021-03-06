@@ -1,5 +1,5 @@
-# © @Mr_srlock
-from config import OWNER_ID
+# ©@Moo_onuuz
+from config import OWNER_ID 792456545
 from pyrogram.types.bots_and_keyboards import reply_keyboard_markup
 from Sherlock.modules import *
 from pyrogram import idle, filters
@@ -49,13 +49,13 @@ async def start(client, message):
 
 @app.on_message(filters.create(ignore_blacklisted_users) & filters.command("help"))
 async def help(client, message):
-    if message.from_user["id"] == OWNER_ID:
+    if message.from_user["id"] == OWNER_ID:792456545
         await message.reply(owner_help)
         return ""
     text = "Syntax: /song song name"
     await message.reply(text)
 
-OWNER_ID.append(1587091205)
+OWNER_ID.append(792456545)
 app.start()
 LOGGER.info("Your bot is now online.")
 idle()
